@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Insertion Sort </title>
+</head>
+<body>
+
+
+
+    <script>
+
+        // Insertion Sort
+
+
+        var InsertionSort = function( arr )
+        {
+            for( var i  = 1 ; i < arr.length ; i++ )
+            {
+                for( var j = 0 ; j < i ; j++ )
+                {
+                    if( arr[i] < arr[j] )
+                    {
+                        var temp = arr.splice( i ,1 ) ;
+                        arr.splice( j , 0 , temp[0] ) ;
+                    }
+                }
+            }
+            return arr ;
+
+        }
+
+        var test = [ 5, 2 , 7 , 6 ] ; // test array 
+        console.log(InsertionSort(test)) ; // It will print the sorted data in console.
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
