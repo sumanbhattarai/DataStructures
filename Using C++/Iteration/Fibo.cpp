@@ -5,7 +5,7 @@ using namespace std ;
 
 int main()
 {
-    int  i , data  , first = 0 , second = 1 ; next ;
+    int  i , data  , first = 0 , second = 1 , next ;
 
     cout << "Enter the no. of terms  : " << endl ;
     cin >> data ;
@@ -20,10 +20,10 @@ int main()
         {
             next = first + second ;
             first = second ;
-            second = first ;
+            second = next ;
             
         }
-        cout << next << endl;
+        cout << next << " ";
     }
     return 0;
 }
