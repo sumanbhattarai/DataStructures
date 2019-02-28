@@ -43,3 +43,15 @@
 6. NewNode -> Next = Temp -> Next
 7. Temp -> Next = NewNode
 8. End
+
+
+# Display All Nodes
+
+1. if ( START equals to Null )
+   * Print " List is Empty "
+   * End
+2. TEMP = START
+3. while ( TEMP -> Next != Null )
+    * Print " TEMP -> Data "
+    * TEMP = TEMP -> Next
+4. End 
