@@ -1,4 +1,21 @@
 
+# Algorithm to insert at end
+
+1. Input DATA to be inserted
+2. Create NewNode
+3. NewNode -> DATA = DATA
+4. NewNode -> Next = NULL
+5. if ( START equal to NULL )
+    * START = NewNode
+    * End
+6. TEMP = START
+7. while ( TEMP -> Next not equal to NULL )
+   * TEMP = TEMP -> Next
+8. TEMP -> Next = NewNode
+9.  NewNode -> Prev = TEMP
+10. End
+
+
 # Algorithm to insert a new node at specified position
 
 1. Input the DATA and the POS to be inserted at
