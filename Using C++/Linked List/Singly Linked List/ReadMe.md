@@ -82,3 +82,18 @@
 
 6. Print " DATA not found "
 7. End 
+
+
+# Algorithm for searching a node
+
+1. Input the DATA to be searched
+2. Initialize  TEMP = START and POS = 1
+3. while ( TEMP not equals to Null )
+    * if ( TEMP -> DATA equals to DATA)
+      *  Print " DATA is found at POS position "
+      *  End
+   *  TEMP = TEMP -> Next
+   *  POS = POS + 1
+
+4.  Print " DATA not found in the list "
+5.  End 
