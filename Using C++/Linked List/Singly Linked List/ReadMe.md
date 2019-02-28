@@ -55,3 +55,30 @@
     * Print " TEMP -> Data "
     * TEMP = TEMP -> Next
 4. End 
+
+
+# Algorithm for Deleting a node
+
+1. Input the DATA to be deleted
+2.  if ( START -> DATA = DATA )
+    * TEMP = START
+    * START = START -> Next
+    * Set free the node TEMP , which is deleted .
+    * End
+3. HOLD = START 
+4. while ( HOLD -> Next -> Next not equal to Null )
+    * if ( HOLD -> Next -> DATA = DATA )
+        * TEMP = HOLD -> Next 
+        * HOLD -> Next = Temp -> Next
+        * Set free the TEMP node , which is deleted.
+        * End
+    * HOLD = HOLD-> Next
+
+5. if ( HOLD -> Next -> DATA == DATA)
+    * TEMP = HOLD -> Next
+    * HOLD -> Next = Null
+    * Set free the TEMP node , which is deleted
+    * End
+
+6. Print " DATA not found "
+7. End 
