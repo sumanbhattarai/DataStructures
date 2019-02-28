@@ -17,3 +17,32 @@
 8. (TEMP -> Next) -> Prev = NewNode
 9. TEMP -> Next = NewNode
 10. End 
+
+
+# Algorithm to delete a node 
+
+1. Input the DATA to be deleted
+2.  if ( START -> DATA = DATA )
+   * TEMP = START
+   * START = START -> Next
+   * START -> Prev = Null
+   * Set free the node TEMP , which is deleted
+   * End
+
+3. HOLD = START
+4. while ( (HOLD -> Next -> Next) not equals to NULL )
+    * if ( HOLD -> Next -> DATA equal to DATA )
+        * TEMP = HOLD -> Next
+        * HOLD -> Next = TEMP -> Next
+        * TEMP -> Next -> Prev = HOLD
+        * Set free the node TEMP , which is deleted
+    * HOLD = HOLD -> Next
+
+5. if ( HOLD -> Next -> DATA = DATA )
+    * TEMP = HOLD -> Next
+    * HOLD -> Next = NULL
+    * Set free the node TEMP , which is deleted
+    * End
+   
+6. Print " DATA not found in the list "
+7. End
