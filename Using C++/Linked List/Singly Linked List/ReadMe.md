@@ -6,7 +6,9 @@
 2. Create NewNode
 3. NewNode -> DATA = DATA 
 4. if ( START equals to NULL )
-         i. NewNode -> Next = Null
-5. NewNode -> Next = START
+    * NewNode -> Next = Null
+5. Else
+    *  NewNode -> Next = START
 6. START = NewNode 
+7. End
 
