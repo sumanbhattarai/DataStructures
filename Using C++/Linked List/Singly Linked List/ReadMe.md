@@ -27,3 +27,19 @@
     * TEMP -> Next = NewNode
 7. End
 
+
+# Insertion of node at the specified position
+
+1. Input DATA and POS to be inserted
+2. Create NewNode
+3. NewNode -> DATA = DATA
+4. Initialize TEMP = START and int i = 1 
+5. While ( i <= POS-1 )
+    * TEMP = TEMP -> Next
+    *  if ( TEMP -> Next == Null )
+       *  Print " Nodes in the list is less than the position"
+       *  End
+    *  i = i + 1 
+6. NewNode -> Next = Temp -> Next
+7. Temp -> Next = NewNode
+8. End
